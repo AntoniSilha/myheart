@@ -1,0 +1,100 @@
+.loginPage {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: 
+    radial-gradient(circle at 30% 30%, var(--color-pink-light) 0%, transparent 50%),
+    radial-gradient(circle at 70% 70%, var(--color-cyan-light) 0%, transparent 50%),
+    var(--color-bg);
+  padding: var(--space-lg);
+}
+
+.loginCard {
+  background: var(--color-surface);
+  border: var(--nb-border-thick);
+  box-shadow: var(--nb-shadow-lg);
+  padding: var(--space-2xl);
+  width: 100%;
+  max-width: 440px;
+  animation: pop-in 0.5s ease-out;
+}
+
+.loginHeader {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.loginEmoji {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+}
+
+.loginTitle {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xs);
+}
+
+.loginSubtitle {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginError {
+  background: var(--color-red-light);
+  border: 2px solid var(--color-red);
+  padding: var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.loginSuccess {
+  background: var(--color-green-light);
+  border: 2px solid var(--color-green);
+  padding: var(--space-md);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.loginFooter {
+  text-align: center;
+  margin-top: var(--space-lg);
+}
+
+.loginFooterLink {
+  color: var(--color-pink);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--font-display);
+}
+
+.loginFooterLink:hover {
+  text-decoration: underline;
+}
+
+.demoNote {
+  margin-top: var(--space-lg);
+  padding: var(--space-md);
+  background: var(--color-yellow-light);
+  border: 2px solid var(--color-yellow);
+  font-size: 0.85rem;
+  text-align: center;
+  font-family: var(--font-display);
+}

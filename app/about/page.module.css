@@ -1,0 +1,125 @@
+.aboutPage {
+  padding: var(--space-3xl) 0;
+}
+
+.aboutHero {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+}
+
+.aboutEmoji {
+  font-size: 4rem;
+  margin-bottom: var(--space-lg);
+  animation: float 3s ease-in-out infinite;
+}
+
+.aboutTitle {
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+}
+
+.aboutSubtitle {
+  font-size: 1.2rem;
+  color: var(--color-text-muted);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.storyCard {
+  background: var(--color-surface);
+  border: var(--nb-border-thick);
+  box-shadow: var(--nb-shadow-lg);
+  padding: var(--space-2xl);
+  max-width: 700px;
+  margin: 0 auto var(--space-2xl);
+  position: relative;
+}
+
+.storyCard::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 20px;
+  width: 60px;
+  height: 8px;
+  background: var(--color-pink);
+  border: 2px solid var(--color-text);
+}
+
+.storyCardTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.storyCardText {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-text);
+}
+
+.storyCardText p {
+  margin-bottom: var(--space-md);
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+  max-width: 800px;
+  margin: var(--space-2xl) auto;
+}
+
+.highlightCard {
+  background: var(--color-surface);
+  border: var(--nb-border);
+  box-shadow: var(--nb-shadow);
+  padding: var(--space-lg);
+  text-align: center;
+  transition: transform var(--transition-bounce), box-shadow var(--transition-fast);
+}
+
+.highlightCard:hover {
+  transform: translate(-3px, -3px) rotate(-1deg);
+  box-shadow: var(--nb-shadow-lg);
+}
+
+.highlightEmoji {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.highlightLabel {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.highlightValue {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: var(--space-xs);
+}
+
+@media (max-width: 768px) {
+  .aboutTitle {
+    font-size: 2rem;
+  }
+
+  .highlightsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .storyCard {
+    padding: var(--space-lg);
+  }
+}

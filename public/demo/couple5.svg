@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#95e77e"/>
+  <rect x="50" y="50" width="700" height="500" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="5"/>
+  <polygon points="400,120 280,320 520,320" fill="#6bcbff" stroke="#1a1a1a" stroke-width="4"/>
+  <polygon points="350,200 230,370 470,370" fill="#95e77e" stroke="#1a1a1a" stroke-width="4"/>
+  <circle cx="380" cy="410" r="25" fill="#ff6b9d" stroke="#1a1a1a" stroke-width="3"/>
+  <circle cx="420" cy="410" r="25" fill="#ffd93d" stroke="#1a1a1a" stroke-width="3"/>
+  <text x="400" y="490" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1a1a1a">Hiking 🏔️</text>
+</svg>

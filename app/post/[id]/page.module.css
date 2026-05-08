@@ -1,0 +1,125 @@
+.postPage {
+  min-height: 80vh;
+}
+
+.postMedia {
+  width: 100%;
+  max-height: 75vh;
+  background: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--nb-border-thick);
+  overflow: hidden;
+}
+
+.postMedia img {
+  max-width: 100%;
+  max-height: 75vh;
+  object-fit: contain;
+}
+
+.postMedia video {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
+.mediaFallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 300px;
+  font-size: 6rem;
+  background: var(--color-pink-light);
+}
+
+.postContent {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-lg);
+  flex-wrap: wrap;
+}
+
+.postDate {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  padding: 6px 14px;
+  border: 2px solid var(--color-text-muted);
+}
+
+.postAlbum {
+  padding: 6px 14px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  border: var(--nb-border);
+  box-shadow: var(--nb-shadow-sm);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.postAlbum:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: var(--nb-shadow);
+}
+
+.postCaption {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  margin-bottom: var(--space-2xl);
+}
+
+.postNav {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-top: var(--space-xl);
+  border-top: var(--nb-border);
+}
+
+.postNavLink {
+  flex: 1;
+}
+
+.backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  text-decoration: none;
+  padding: 8px 16px;
+  border: 2px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.backLink:hover {
+  border-color: var(--color-text);
+  box-shadow: var(--nb-shadow-sm);
+  transform: translate(-2px, -2px);
+}
+
+@media (max-width: 768px) {
+  .postCaption {
+    font-size: 1.1rem;
+  }
+
+  .postNav {
+    flex-direction: column;
+  }
+}

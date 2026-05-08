@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#ffd93d"/>
+  <rect x="50" y="50" width="700" height="500" rx="0" fill="#fff" stroke="#1a1a1a" stroke-width="5"/>
+  <rect x="280" y="200" width="100" height="130" rx="0" fill="#95e77e" stroke="#1a1a1a" stroke-width="4"/>
+  <rect x="420" y="200" width="100" height="130" rx="0" fill="#c084fc" stroke="#1a1a1a" stroke-width="4"/>
+  <circle cx="330" cy="240" r="18" fill="#8B4513" stroke="#1a1a1a" stroke-width="3"/>
+  <circle cx="470" cy="240" r="18" fill="#8B4513" stroke="#1a1a1a" stroke-width="3"/>
+  <text x="400" y="420" text-anchor="middle" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1a1a1a">Coffee Date ☕</text>
+</svg>

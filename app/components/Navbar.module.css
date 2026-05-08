@@ -1,0 +1,117 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--color-surface);
+  border-bottom: var(--nb-border-thick);
+  padding: 0 var(--space-lg);
+}
+
+.navbarInner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform var(--transition-bounce);
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logoHeart {
+  font-size: 1.8rem;
+  animation: pulse-heart 1.5s ease-in-out infinite;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  list-style: none;
+}
+
+.navLink {
+  display: block;
+  padding: 8px 16px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-text);
+  text-decoration: none;
+  border: 2px solid transparent;
+  transition: all var(--transition-fast);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.navLink:hover {
+  background: var(--color-yellow);
+  border-color: var(--color-border);
+  box-shadow: var(--nb-shadow-sm);
+  transform: translate(-1px, -1px);
+}
+
+.navLinkActive {
+  background: var(--color-pink);
+  border-color: var(--color-border);
+  box-shadow: var(--nb-shadow-sm);
+}
+
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+
+  .mobileToggle {
+    display: block;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background: var(--color-surface);
+    border-bottom: var(--nb-border-thick);
+    padding: var(--space-md);
+    gap: var(--space-xs);
+    z-index: 99;
+    animation: slide-up 0.3s ease-out;
+  }
+
+  .mobileMenu .navLink {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+    font-size: 1.1rem;
+  }
+}
